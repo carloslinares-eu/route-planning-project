@@ -1,4 +1,4 @@
-# Install script for directory: /home/carlos/CppND-Route-Planning-Project/thirdparty/pugixml
+# Install script for directory: /home/carlos/route-planning-project/thirdparty/pugixml
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,13 +43,13 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/carlos/CppND-Route-Planning-Project/lib/libpugixml.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/carlos/route-planning-project/lib/libpugixml.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "/home/carlos/CppND-Route-Planning-Project/thirdparty/pugixml/src/pugixml.hpp"
-    "/home/carlos/CppND-Route-Planning-Project/thirdparty/pugixml/src/pugiconfig.hpp"
+    "/home/carlos/route-planning-project/thirdparty/pugixml/src/pugixml.hpp"
+    "/home/carlos/route-planning-project/thirdparty/pugixml/src/pugiconfig.hpp"
     )
 endif()
 
@@ -57,7 +57,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/pugixml/pugixml-config.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/pugixml/pugixml-config.cmake"
-         "/home/carlos/CppND-Route-Planning-Project/build/thirdparty/pugixml/CMakeFiles/Export/be764272e56105fc8ff11fec8314e604/pugixml-config.cmake")
+         "/home/carlos/route-planning-project/build/thirdparty/pugixml/CMakeFiles/Export/be764272e56105fc8ff11fec8314e604/pugixml-config.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/pugixml/pugixml-config-*.cmake")
       if(_cmake_old_config_files)
@@ -70,9 +70,9 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/pugixml" TYPE FILE FILES "/home/carlos/CppND-Route-Planning-Project/build/thirdparty/pugixml/CMakeFiles/Export/be764272e56105fc8ff11fec8314e604/pugixml-config.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/pugixml" TYPE FILE FILES "/home/carlos/route-planning-project/build/thirdparty/pugixml/CMakeFiles/Export/be764272e56105fc8ff11fec8314e604/pugixml-config.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/pugixml" TYPE FILE FILES "/home/carlos/CppND-Route-Planning-Project/build/thirdparty/pugixml/CMakeFiles/Export/be764272e56105fc8ff11fec8314e604/pugixml-config-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/pugixml" TYPE FILE FILES "/home/carlos/route-planning-project/build/thirdparty/pugixml/CMakeFiles/Export/be764272e56105fc8ff11fec8314e604/pugixml-config-noconfig.cmake")
   endif()
 endif()
 
@@ -85,6 +85,6 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/home/carlos/CppND-Route-Planning-Project/build/thirdparty/pugixml/pugixml.pc")
+  file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/home/carlos/route-planning-project/build/thirdparty/pugixml/pugixml.pc")
 endif()
 

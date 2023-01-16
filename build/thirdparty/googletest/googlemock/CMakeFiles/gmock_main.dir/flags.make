@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/carlos/CppND-Route-Planning-Project/thirdparty/googletest/googlemock/include -isystem /home/carlos/CppND-Route-Planning-Project/thirdparty/googletest/googlemock -isystem /home/carlos/CppND-Route-Planning-Project/thirdparty/googletest/googletest/include -isystem /home/carlos/CppND-Route-Planning-Project/thirdparty/googletest/googletest
+CXX_INCLUDES = -isystem /home/carlos/route-planning-project/thirdparty/googletest/googlemock/include -isystem /home/carlos/route-planning-project/thirdparty/googletest/googlemock -isystem /home/carlos/route-planning-project/thirdparty/googletest/googletest/include -isystem /home/carlos/route-planning-project/thirdparty/googletest/googletest
 
 CXX_FLAGS = -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17
 

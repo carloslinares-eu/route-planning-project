@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/carlos/CppND-Route-Planning-Project/lib/libpugixml.a"
-  "/home/carlos/CppND-Route-Planning-Project/lib/libpugixml.pdb"
+  "/home/carlos/route-planning-project/lib/libpugixml.a"
+  "/home/carlos/route-planning-project/lib/libpugixml.pdb"
   "CMakeFiles/pugixml.dir/src/pugixml.cpp.o"
   "CMakeFiles/pugixml.dir/src/pugixml.cpp.o.d"
 )

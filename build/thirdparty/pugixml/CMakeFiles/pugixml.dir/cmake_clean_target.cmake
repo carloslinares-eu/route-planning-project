@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "/home/carlos/CppND-Route-Planning-Project/lib/libpugixml.a"
+  "/home/carlos/route-planning-project/lib/libpugixml.a"
 )

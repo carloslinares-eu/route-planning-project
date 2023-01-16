@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/carlos/CppND-Route-Planning-Project/thirdparty/pugixml/src
+CXX_INCLUDES = -I/home/carlos/route-planning-project/thirdparty/pugixml/src
 
 CXX_FLAGS = -std=gnu++17
 

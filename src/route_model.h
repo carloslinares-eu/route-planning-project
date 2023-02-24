@@ -26,10 +26,13 @@ class RouteModel : public Model {
         Node(){}
         Node(int idx, RouteModel * search_model, Model::Node node) : Model::Node(node), parent_model(search_model), index(idx) {}
 
+        float get_h_and_g_sum() const { return h_value + g_value;}
+
       private:
         int index;
         Node * FindNeighbor(std::vector<int> node_indices);
         RouteModel * parent_model = nullptr;
+
     };
 
     RouteModel(const std::vector<std::byte> &xml);

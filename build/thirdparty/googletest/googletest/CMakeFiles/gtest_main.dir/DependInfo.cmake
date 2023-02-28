@@ -11,9 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/carloslinares-eu/Dev/route-planning-project/thirdparty/googletest/googletest/src/gtest_main.cc" "thirdparty/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" "gcc" "thirdparty/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/carloslinares-eu/Dev/route-planning-project/build/thirdparty/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

@@ -31,7 +31,10 @@ void RoutePlanner::AddNeighbors(RouteModel::Node *current_node) {
 }
 
 RouteModel::Node *RoutePlanner::NextNode() {
-    SortOpenListBySumOfGH();
+    std::sort(open_list.begin(), open_list.end(),
+              [](const RouteModel::Node *node_a, const RouteModel::Node *node_b){
+        return node_a->get_h_and_g_sum() < node_b->get_h_and_g_sum();
+    });
     RouteModel::Node* pointer_2_next_node = open_list[0];
     open_list.erase(open_list.begin());
     return pointer_2_next_node;
@@ -59,6 +62,7 @@ void RoutePlanner::AStarSearch() {
     auto current_node = start_node;
     current_node->visited = true;
     open_list.push_back(current_node);
+
     while (current_node != end_node){
         AddNeighbors(current_node);
         current_node = NextNode();
@@ -66,20 +70,4 @@ void RoutePlanner::AStarSearch() {
 
     m_Model.path = ConstructFinalPath(current_node);
 
-}
-
-void RoutePlanner::SortOpenListBySumOfGH(){
-    bool swapped = true;
-    int j = 0;
-
-    while (swapped) {
-        swapped = false;
-        j++;
-        for (int i = 0; i < open_list.size() - j; i++){
-            if (open_list[i]->get_h_and_g_sum() > open_list[i+1]->get_h_and_g_sum()) {
-                std::swap(open_list[i], open_list[i+1]);
-                swapped = true;
-            }
-        }
-    }
 }
